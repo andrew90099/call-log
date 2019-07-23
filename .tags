@@ -1,0 +1,28 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+argparse	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^import argparse$/;"	i	language:Python
+BASE_DIR	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^BASE_DIR = path.dirname(path.abspath(__file__))$/;"	v	language:Python
+config	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^import config$/;"	i	language:Python
+csv	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^import csv$/;"	i	language:Python
+datetime	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^import datetime$/;"	i	language:Python
+DEBUG	/home/dennis/call_log/config.py	/^DEBUG = False$/;"	v	language:Python
+DEBUG	/Volumes/print_sort/home/dennis/call_log/config.py	/^DEBUG = False$/;"	v	language:Python
+generate_email	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^def generate_email(processed_data, date):$/;"	f	language:Python
+get_call_log_data	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^def get_call_log_data(date, num_days=1):$/;"	f	language:Python
+is_sales	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^def is_sales(row_data):$/;"	f	language:Python
+main	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^def main():$/;"	f	language:Python
+MIMEMultipart	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^from email.mime.multipart import MIMEMultipart$/;"	i	language:Python
+MIMEText	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^from email.mime.text import MIMEText$/;"	i	language:Python
+OrderedDict	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^from collections import OrderedDict$/;"	i	language:Python
+path	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^from os import path$/;"	i	language:Python
+process_data	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^def process_data(data):$/;"	f	language:Python
+re	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^import re$/;"	i	language:Python
+RECIPIENTS	/home/dennis/call_log/config.py	/^RECIPIENTS = [$/;"	v	language:Python
+RECIPIENTS	/Volumes/print_sort/home/dennis/call_log/config.py	/^RECIPIENTS = [$/;"	v	language:Python
+requests	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^import requests$/;"	i	language:Python
+SALESPEOPLE	/home/dennis/call_log/config.py	/^SALESPEOPLE = [$/;"	v	language:Python
+SALESPEOPLE	/Volumes/print_sort/home/dennis/call_log/config.py	/^SALESPEOPLE = [$/;"	v	language:Python
+send_email	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^def send_email(msg, recipients):$/;"	f	language:Python
+smtplib	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^import smtplib$/;"	i	language:Python
+string	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^import string$/;"	i	language:Python
+sys	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^import sys$/;"	i	language:Python
+VERSION	/Volumes/print_sort/home/dennis/call_log/call_log.py	/^VERSION = '0.2'$/;"	v	language:Python

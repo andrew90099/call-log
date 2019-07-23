@@ -1,0 +1,401 @@
+Traceback (most recent call last):
+  File "/home/dennis/call_log/call_log.py", line 228, in <module>
+    sys.exit(main())
+  File "/home/dennis/call_log/call_log.py", line 222, in main
+    send_email(msg, recipients)
+  File "/home/dennis/call_log/call_log.py", line 191, in send_email
+    s.sendmail('info@tomcodydesign.com', recipients, msg.as_string())
+  File "/usr/lib/python2.7/smtplib.py", line 741, in sendmail
+    (code, resp) = self.data(msg)
+  File "/usr/lib/python2.7/smtplib.py", line 509, in data
+    (code, msg) = self.getreply()
+  File "/usr/lib/python2.7/smtplib.py", line 366, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+Traceback (most recent call last):
+  File "/home/dennis/call_log/call_log.py", line 228, in <module>
+    sys.exit(main())
+  File "/home/dennis/call_log/call_log.py", line 217, in main
+    processed_data = process_data(data)
+  File "/home/dennis/call_log/call_log.py", line 105, in process_data
+    for d in data:
+  File "/home/dennis/call_log/call_log.py", line 88, in <genexpr>
+    return (dict(zip(header, row)) for row in reader if is_sales(row))
+  File "/home/dennis/call_log/call_log.py", line 94, in is_sales
+    return any([k in config.SALESPEOPLE for k in [row_data[4], row_data[10]]])
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/home/dennis/call_log/call_log.py", line 228, in <module>
+    sys.exit(main())
+  File "/home/dennis/call_log/call_log.py", line 217, in main
+    processed_data = process_data(data)
+  File "/home/dennis/call_log/call_log.py", line 105, in process_data
+    for d in data:
+  File "/home/dennis/call_log/call_log.py", line 88, in <genexpr>
+    return (dict(zip(header, row)) for row in reader if is_sales(row))
+  File "/home/dennis/call_log/call_log.py", line 94, in is_sales
+    return any([k in config.SALESPEOPLE for k in [row_data[4], row_data[10]]])
+IndexError: list index out of range
+Content-Type: multipart/alternative;
+ boundary="===============1648745267763730956=="
+MIME-Version: 1.0
+X-CALL_LOG-VERSION: 0.2
+From: Tom Cody Design <info@tomcodydesign.com>
+To: Dennis Burke <dennis+calllogs@tomcodydesign.com>,
+ Tom Cody <tcodynyc+calllogs@gmail.com>,
+ John Wahl <john+calllogs@tomcodydesign.com>,
+ Mark Adolf <mark+calllogs@tomcodydesign.com>
+Subject: CALL LOG: 2017-03-07
+
+--===============1648745267763730956==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+|John Wahl
+|0 outgoing calls (0:00:00)
+|0 ingoing calls (0:00:00)
+|total call time: 0:00:00
+
+|Mark Adolf
+|30 outgoing calls (0:22:13)
+|5 ingoing calls (0:01:04)
+|10:13|outgoing|00:00:36|646-787-2464
+|10:17|outgoing|00:01:27|646-839-7000
+|10:51|outgoing|00:00:01|212-261-3453
+|10:51|outgoing|00:00:00|212-261-3453
+|10:51|outgoing|00:00:24|212-613-4532
+|12:50|outgoing|00:00:44|212-842-5400
+|12:51|outgoing|00:00:06|212-842-5498
+|12:52|outgoing|00:00:07|212-842-5498
+|14:03|outgoing|00:00:07|212-842-5498
+|14:03|outgoing|00:00:42|212-842-5400
+|14:07|outgoing|00:01:02|212-239-8880
+|14:23|outgoing|00:00:58|212-594-7400
+|14:25|outgoing|00:00:31|212-944-0317
+|14:31|incoming|00:00:09|ROBY ROGER      760-831-4392
+|14:32|incoming|00:00:17|ROBY ROGER      760-831-4392
+|15:15|incoming|00:00:16|UNAVAILABLE     855-839-5234
+|15:17|incoming|00:00:19|Kurz Dennis     847-783-0490
+|15:40|incoming|00:00:03|KENTUCKY        859-945-9214
+|15:41|outgoing|00:00:26|646-738-3314
+|15:42|outgoing|00:01:30|877-294-7737
+|15:49|outgoing|00:01:32|646-699-2067
+|15:50|outgoing|00:00:44|514-737-5665
+|15:54|outgoing|00:00:01|646-669-9200
+|15:54|outgoing|00:00:54|646-699-2000
+|15:55|outgoing|00:02:45|646-699-2000
+|16:04|outgoing|00:00:33|212-302-0445
+|16:06|outgoing|00:00:29|212-886-4903
+|16:08|outgoing|00:01:14|212-575-2550
+|16:10|outgoing|00:00:09|845-369-4500
+|16:10|outgoing|00:01:05|551-777-6700
+|16:15|outgoing|00:00:01|646-650-2480
+|16:15|outgoing|00:00:54|646-502-4800
+|16:19|outgoing|00:01:43|800-538-0668
+|16:33|outgoing|00:00:55|212-840-1800
+|17:01|outgoing|00:00:33|201-266-8922
+|total call time: 0:23:17
+
+
+--===============1648745267763730956==
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<table cellspacing="0" cellpadding="0" border="0">
+		<thead style="background-color: #ddd">
+		<tr><th colspan=4 style="text-align: left;">John Wahl</th></tr>
+		<tr><td colspan=4>0 outgoing calls (0:00:00)</td></tr>
+		<tr><td colspan=4>0 ingoing calls (0:00:00)</td></tr>
+		<tr>
+			<th width="50" style="text-align: left; padding: 0 1em;">time</th>
+			<th width="75" style="text-align: left; padding: 0 1em;">type</th>
+			<th width="75" style="text-align: left; padding: 0 1em;">length</th>
+			<th width="300" style="text-align: left; padding: 0 1em;">to/from</th>
+		</tr>
+		</thead>
+		<tbody>
+
+		</tbody>
+		<tfoot style="background-color: #ddd">
+		<tr><th colspan=4>total call time: 0:00:00</th></tr>
+		</tfoot>
+	</table>
+	<br />
+	<table cellspacing="0" cellpadding="0" border="0">
+		<thead style="background-color: #ddd">
+		<tr><th colspan=4 style="text-align: left;">Mark Adolf</th></tr>
+		<tr><td colspan=4>30 outgoing calls (0:22:13)</td></tr>
+		<tr><td colspan=4>5 ingoing calls (0:01:04)</td></tr>
+		<tr>
+			<th width="50" style="text-align: left; padding: 0 1em;">time</th>
+			<th width="75" style="text-align: left; padding: 0 1em;">type</th>
+			<th width="75" style="text-align: left; padding: 0 1em;">length</th>
+			<th width="300" style="text-align: left; padding: 0 1em;">to/from</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">10:13</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:36</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">646-787-2464</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">10:17</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:01:27</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">646-839-7000</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">10:51</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:01</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">212-261-3453</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">10:51</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:00</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">212-261-3453</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">10:51</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:24</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">212-613-4532</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">12:50</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:44</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">212-842-5400</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">12:51</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:06</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">212-842-5498</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">12:52</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:07</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">212-842-5498</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">14:03</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:07</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">212-842-5498</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">14:03</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:42</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">212-842-5400</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">14:07</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:01:02</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">212-239-8880</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">14:23</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:58</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">212-594-7400</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">14:25</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:31</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">212-944-0317</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">14:31</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">incoming</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:09</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">ROBY ROGER      760-831-4392</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">14:32</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">incoming</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:17</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">ROBY ROGER      760-831-4392</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">15:15</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">incoming</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:16</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">UNAVAILABLE     855-839-5234</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">15:17</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">incoming</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:19</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">Kurz Dennis     847-783-0490</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">15:40</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">incoming</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:03</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">KENTUCKY        859-945-9214</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">15:41</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:26</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">646-738-3314</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">15:42</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:01:30</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">877-294-7737</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">15:49</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:01:32</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">646-699-2067</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">15:50</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:44</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">514-737-5665</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">15:54</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:01</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">646-669-9200</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">15:54</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:54</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">646-699-2000</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">15:55</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:02:45</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">646-699-2000</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">16:04</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:33</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">212-302-0445</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">16:06</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:29</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">212-886-4903</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">16:08</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:01:14</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">212-575-2550</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">16:10</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:09</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">845-369-4500</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">16:10</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:01:05</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">551-777-6700</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">16:15</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:01</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">646-650-2480</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">16:15</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:54</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">646-502-4800</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">16:19</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:01:43</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">800-538-0668</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">16:33</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:55</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">212-840-1800</td>
+		</tr>		<tr>
+			<td width="50" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">17:01</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">outgoing</td>
+			<td width="75" style="border-right: thin solid black; border-bottom: thin solid black; padding: 0 1em;">00:00:33</td>
+			<td width="300" style="border-bottom: thin solid black; padding: 0 1em;">201-266-8922</td>
+		</tr>
+		</tbody>
+		<tfoot style="background-color: #ddd">
+		<tr><th colspan=4>total call time: 0:23:17</th></tr>
+		</tfoot>
+	</table>
+	<br />
+</body>
+</html>
+--===============1648745267763730956==--
+Traceback (most recent call last):
+  File "/home/dennis/call_log/call_log.py", line 228, in <module>
+    sys.exit(main())
+  File "/home/dennis/call_log/call_log.py", line 217, in main
+    processed_data = process_data(data)
+  File "/home/dennis/call_log/call_log.py", line 105, in process_data
+    for d in data:
+  File "/home/dennis/call_log/call_log.py", line 88, in <genexpr>
+    return (dict(zip(header, row)) for row in reader if is_sales(row))
+  File "/home/dennis/call_log/call_log.py", line 94, in is_sales
+    return any([k in config.SALESPEOPLE for k in [row_data[4], row_data[10]]])
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/home/dennis/call_log/call_log.py", line 228, in <module>
+    sys.exit(main())
+  File "/home/dennis/call_log/call_log.py", line 217, in main
+    processed_data = process_data(data)
+  File "/home/dennis/call_log/call_log.py", line 105, in process_data
+    for d in data:
+  File "/home/dennis/call_log/call_log.py", line 88, in <genexpr>
+    return (dict(zip(header, row)) for row in reader if is_sales(row))
+  File "/home/dennis/call_log/call_log.py", line 94, in is_sales
+    return any([k in config.SALESPEOPLE for k in [row_data[4], row_data[10]]])
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/home/dennis/call_log/call_log.py", line 228, in <module>
+    sys.exit(main())
+  File "/home/dennis/call_log/call_log.py", line 217, in main
+    processed_data = process_data(data)
+  File "/home/dennis/call_log/call_log.py", line 105, in process_data
+    for d in data:
+  File "/home/dennis/call_log/call_log.py", line 88, in <genexpr>
+    return (dict(zip(header, row)) for row in reader if is_sales(row))
+  File "/home/dennis/call_log/call_log.py", line 94, in is_sales
+    return any([k in config.SALESPEOPLE for k in [row_data[4], row_data[10]]])
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/home/dennis/call_log/call_log.py", line 228, in <module>
+    sys.exit(main())
+  File "/home/dennis/call_log/call_log.py", line 217, in main
+    processed_data = process_data(data)
+  File "/home/dennis/call_log/call_log.py", line 105, in process_data
+    for d in data:
+  File "/home/dennis/call_log/call_log.py", line 88, in <genexpr>
+    return (dict(zip(header, row)) for row in reader if is_sales(row))
+  File "/home/dennis/call_log/call_log.py", line 94, in is_sales
+    return any([k in config.SALESPEOPLE for k in [row_data[4], row_data[10]]])
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/home/dennis/call_log/call_log.py", line 228, in <module>
+    sys.exit(main())
+  File "/home/dennis/call_log/call_log.py", line 217, in main
+    processed_data = process_data(data)
+  File "/home/dennis/call_log/call_log.py", line 105, in process_data
+    for d in data:
+  File "/home/dennis/call_log/call_log.py", line 88, in <genexpr>
+    return (dict(zip(header, row)) for row in reader if is_sales(row))
+  File "/home/dennis/call_log/call_log.py", line 94, in is_sales
+    return any([k in config.SALESPEOPLE for k in [row_data[4], row_data[10]]])
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/home/dennis/call_log/call_log.py", line 228, in <module>
+    sys.exit(main())
+  File "/home/dennis/call_log/call_log.py", line 217, in main
+    processed_data = process_data(data)
+  File "/home/dennis/call_log/call_log.py", line 105, in process_data
+    for d in data:
+  File "/home/dennis/call_log/call_log.py", line 88, in <genexpr>
+    return (dict(zip(header, row)) for row in reader if is_sales(row))
+  File "/home/dennis/call_log/call_log.py", line 94, in is_sales
+    return any([k in config.SALESPEOPLE for k in [row_data[4], row_data[10]]])
+IndexError: list index out of range
